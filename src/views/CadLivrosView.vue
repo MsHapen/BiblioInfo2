@@ -55,27 +55,51 @@ export default {
         <input type="text" v-model="livro.titulo" placeholder="título" />
         <input type="text" v-model="livro.ISBN" placeholder="ISBN" />
 
-
         <select
+          class="select-btn"
           name="autor"
           id="autor"
-          v-model="livro.autor">
+          placeholder="Autor"
+          v-model="livro.autor"
+        >
           <option value="" disabled selected>Autor</option>
-          <option v-for="autor in autores" :key="autor.id" :value="autor.id">{{ autor.nome }}</option>
+          <option v-for="autor in autores" :key="autor.id" :value="autor.id">
+            {{ autor.nome }}
+          </option>
         </select>
 
         <select
+          class="select-btn"
+          placeholder="Categoria"
           name="categoria"
           id="categoria"
-          v-model="livro.categoria">
+          v-model="livro.categoria"
+        >
           <option class="disabled" value="" disabled selected>Categoria</option>
-          <option v-for="categoria in categorias" :key="categoria.id" :value="categoria.id">{{ categoria.nome }}</option>
+          <option
+            v-for="categoria in categorias"
+            :key="categoria.id"
+            :value="categoria.id"
+          >
+            {{ categoria.nome }}
+          </option>
         </select>
 
-
-        <select name="editora" id="editora" v-model="livro.editora">
+        <select
+          class="select-btn"
+          placeholder="Editora"
+          name="editora"
+          id="editora"
+          v-model="livro.editora"
+        >
           <option value="" disabled selected>Editora</option>
-          <option v-for="editora in editoras" :key="editora.id" :value="editora.id">{{ editora.nome }}</option>
+          <option
+            v-for="editora in editoras"
+            :key="editora.id"
+            :value="editora.id"
+          >
+            {{ editora.nome }}
+          </option>
         </select>
         <input
           type="number"
@@ -118,8 +142,12 @@ export default {
               <td>{{ livro.preco }}</td>
               <td>
                 <div>
-                  <button class="edit-btn" @click="editar(livro)">editar</button>
-                  <button class="edit-btn" @click="excluir(livro)">excluir</button>
+                  <button class="edit-btn" @click="editar(livro)">
+                    editar
+                  </button>
+                  <button class="edit-btn" @click="excluir(livro)">
+                    excluir
+                  </button>
                 </div>
               </td>
             </tr>

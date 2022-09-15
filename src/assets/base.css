@@ -31,17 +31,19 @@ body {
 .form-input input {
   width: 60%;
   height: 40px;
-  border: 1px solid #D9EBEA;;
+  border: 3px solid #F29A30;
+  background-color: #E1D8EF;
   border-radius: 10px;
   padding: 0 10px;
   font-family: 'Montserrat', sans-serif;
 }
 
 .form-input button {
+  justify-content: center;
   margin-left: 1%;
   width: 20%;
   height: 40px;
-  border: 1px solid #E1D8EF;
+  border: 3px solid #F29A30;
   border-radius: 10px;
   background-color: #E1D8EF;
   color: Black;
@@ -57,10 +59,10 @@ body {
 
 table {
   width: 80%;
-  
   margin: 2% auto;
   border-collapse: collapse;
   font-family: 'Montserrat', sans-serif;
+  
 }
 
 table tr th {
@@ -81,12 +83,14 @@ table tr:nth-child(odd) {
   background-color: #E1D8EF;
   border: #F29A30;
   border-radius: 10px;
+  display: flex;
+  justify-content: center;
 }
 .categoria{
   background-color: #E1D8EF;
   border-radius: 10px;
   border: #F29A30;
-  
+  justify-content: center
 }
 .editora{
   background-color: white;
@@ -101,10 +105,11 @@ table tr:nth-child(odd) {
 
 .container{
   font-family: 'Montserrat', sans-serif;
+  justify-content: center 
 }
 .edit-btn{
   margin-left: 10%;
-  width: 80%;
+  width: 60%;
   height: 40px;
   margin-bottom: 5%;
   border: 1px solid #E1D8EF;
@@ -114,6 +119,16 @@ table tr:nth-child(odd) {
   font-weight: bold;
   cursor: pointer;
   font-family: 'Montserrat', sans-serif;
-  display: flex;
   justify-content: center;
+}
+.select-btn{
+  width: 40%;
+  height: 40px;
+  border: 3px solid #F29A30;
+  border-radius: 10%;
+  background-color: #E1D8EF;  
+  color: Black;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
 }
